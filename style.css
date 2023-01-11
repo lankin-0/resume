@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #94a7cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1680px;
+  min-height: 1000px;
+  background: #fff;
+  margin: 25px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_Side {
+  position: relative;
+  background: #213347;
+  padding: 40px;
+}
+
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.profileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactInfo {
+  padding-top: 40px;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.contactInfo ul {
+  position: relative;
+}
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 40px;
+  font-size: 30px;
+  color: #02aefd;
+}
+
+.contactInfo ul li span {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
+.contactInfo ul li span a {
+  text-decoration: none;
+}
+
+.contactInfo ul li span a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contactInfo .education li {
+  margin-bottom: 25px;
+}
+
+.contactInfo .education h5 {
+  color: #03a9f4;
+  font-size: 1.15rem;
+}
+
+.contactInfo .education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
+}
+
+.contactInfo .education h4 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.container .right_Side {
+  position: relative;
+  background: #060a0c;
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #12a0e2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+p {
+  color: #b1b5bb;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.git-link {
+  font-weight: 600;
+}
+.git-link:visited {
+  color: #b1b5bb;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .year_company {
+  min-width: 150px;
+}
+
+.about .box .year_company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+/* SKILLS */
+.skills {
+  margin: 25px 0px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.skill h4 {
+  color: #ccd9e2;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.skill img {
+  width: 100px;
+}
+
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+  list-style: none;
+  color: #fff;
+  font-weight: 500;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.interest ul li .fa {
+  color: #03a9f4;
+  font-size: 30px;
+  width: 40px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .year_company {
+    min-width: 150px;
+    margin-bottom: 5px;
+  }
+  .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
