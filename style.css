@@ -282,10 +282,6 @@ p {
     margin: 0;
   }
 
-  .interest ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .contactInfo ul li .icon {
     width: 30px;
     font-size: 22px;
@@ -320,5 +316,24 @@ p {
   }
   .skills .box {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .interest ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .interest ul li {
+    list-style: none;
+    color: #fff;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .interest ul li .fa {
+    color: #03a9f4;
+    font-size: 20px;
+    width: 30px;
   }
 }
