@@ -142,7 +142,7 @@ body {
 .container .right_Side {
   position: relative;
   background: #060a0c;
-  padding: 40px;
+  padding: 10px;
 }
 
 .about {
@@ -245,7 +245,7 @@ p {
 
 @media (max-width: 1000px) {
   .container {
-    margin: 10px;
+    margin: 0px;
     grid-template-columns: repeat(1, 1fr);
   }
   .interest ul {
@@ -261,8 +261,62 @@ p {
     min-width: 150px;
     margin-bottom: 5px;
   }
+  .profileText .imgBx {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .container .left_Side {
+    padding: 25px;
+  }
+
+  .skill img {
+    width: 50px;
+    margin: 0;
+  }
+
   .interest ul {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contactInfo ul li .icon {
+    width: 30px;
+    font-size: 22px;
+  }
+
+  .contactInfo ul li span {
+    font-size: 1em;
+  }
+
+  .contactInfo .education li {
+    margin-bottom: 25px;
+  }
+
+  .contactInfo .education h5 {
+    color: #03a9f4;
+    font-size: 1rem;
+  }
+
+  .contactInfo .education h4:nth-child(2) {
+    font-weight: 400;
+  }
+
+  .contactInfo .education h4 {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+
+  p {
+    color: #b1b5bb;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
   }
   .skills .box {
     grid-template-columns: repeat(1, 1fr);
