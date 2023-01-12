@@ -119,6 +119,11 @@ body {
   color: #fff;
 }
 
+.contactInfo ul li span a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
 .contactInfo .education li {
   margin-bottom: 25px;
 }
